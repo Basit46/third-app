@@ -1,0 +1,670 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+:root{
+  --br-color: rgb(124, 110, 33);
+  --the-color : rgb(218, 190, 33);
+}
+.menu{
+  display: none;
+}
+.home{
+  position: relative;
+  height: 600px;
+  background: linear-gradient(to bottom, var(--br-color), gold);
+}
+.home nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.home nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+.home nav ul li{
+  margin-left: 10px;
+  list-style: none;
+  font-size: 1.8rem;
+}
+.home .logo p{
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+}
+.home nav .buttons button{
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  color: white;
+  background-color: black;
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+.home nav .buttons .login{
+  background-color: rgb(240, 70, 98);
+}
+.home .couch{
+  width: 1100px;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15%;
+}
+.home .appimageBox{
+  z-index: 400;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35%;
+  width: 202px;
+  position: relative;
+}
+.home .appimageBox .appimage{
+  height: 400px;
+}
+.home .appimageBox button{
+  background-color: goldenrod;
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 430px;
+  width: 80%;
+}
+.bar .line{
+  width: 20px;
+  height: 0px;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+.about{
+  background-color: white;
+  padding-top: 200px;
+  display: flex;
+  height: 270px;
+  overflow-y: hidden;
+}
+.about .aboutleft{
+  flex: 10%;
+}
+.about .aboutright{
+  flex: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+.about .aboutcenter{
+  flex: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.about .aboutcenter .item{
+  width: 30%;
+  position: relative;
+}
+.aboutcenter .item img{
+  width: 30px;
+  height: 30px;
+  padding: 12px;
+  border: 3px var(--the-color) solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.aboutcenter .item .p{
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.aboutcenter .item .words{
+  text-align: center;
+  font-size: 1.1rem;
+}
+.aboutpadding{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+.partner{
+  background-color: black;
+  padding: 20px 0px;
+}
+.partner h1{
+  text-align: center;
+  color: var(--the-color);
+}
+.partner p{
+  text-align: center;
+  margin-top: 12px;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+.partner .line1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  grid-gap: 50px;
+}
+.partner .line1 .gridbox{
+  background-color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+}
+.partner .line1 .gridbox img{
+  width: 110px;
+  height: 110px;
+}
+.partner .line2{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  grid-gap: 50px;
+}
+.partner .line2 .gridbox{
+  background-color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+}
+.partner .line2 .gridbox img{
+  width: 110px;
+  height: 110px;
+}
+.footer{
+  padding: 40px 0px 0px 0px;
+}
+.footer .section1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+  position: relative;
+}
+.footer .section1 h1{
+  font-weight: bolder;
+}
+.footer .section1 p{
+  font-size: 1.3rem;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+.footer .section1 button{
+  background-color: var(--the-color);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+}
+.footer .section1 img{
+  height: 450px;
+  z-index: 1;
+  margin-right: 100px;
+}
+.footer .section1 .circle{
+  position: absolute;
+  border: 7px var(--the-color) solid;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  right: -2px;
+  top: 44%;
+}
+.footer .section2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px 0px 50px;
+}
+.footer .section2 .images{
+  width: 200px;
+}
+.footer .section2 .images .lamp{
+ width: 200px;
+}
+.footer .section2 .images button{
+  background-color: var(--the-color);
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0px 15px 15px rgb(228, 223, 223);
+}
+.footer .section2 .images .appBox{
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+}
+.footer .section2 .images .appimg{
+  width: 200px;
+}
+.footer .section2 form{
+  border: 4px black solid;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 400px;
+}
+.footer .section2 form h2{
+  font-weight: bolder;
+  margin-bottom: 4px;
+}
+.footer .section2 form label{
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.footer .section2 form input{
+  border-radius: 3px;
+  border: 2px rgb(196, 170, 23) solid;
+  outline: none;
+  padding: 3px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.footer .section2 form textarea{
+  border: 2px rgb(196, 170, 23) solid;
+  outline: none;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 28px;
+  display: block;
+  height: 150px;
+  padding: 4px;
+}
+.footer .section2 form textarea::placeholder{
+  font-weight: bolder;
+}
+.footer .section2 form button{
+  background-color: var(--the-color);
+  padding: 5px 10px;
+  border-radius: 7px;
+  display: block;
+  border: none;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width:375px){
+  .home{
+    position: relative;
+    height: 600px;
+    background: linear-gradient(to bottom, var(--br-color), gold);
+  }
+  .home nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .home nav ul{
+    display: flex;
+    justify-content: space-between;
+    display: none;
+  }
+  .home nav ul li{
+    margin-left: 10px;
+    list-style: none;
+    font-size: 1.8rem;
+  }
+  .home .logo {
+    display: block;
+  }
+  .home .logo img{
+    width: 50%;
+  }
+  .home nav .buttons{
+    display: none;
+  }
+  .home nav .buttons button{
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: white;
+    background-color: black;
+    margin-right: 10px;
+    font-size: 1.3rem;
+  }
+  .home nav .buttons .login{
+    background-color: rgb(240, 70, 98);
+  }
+  .home .couch{
+    width: 90%;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8%;
+  }
+  .home .appimageBox{
+    z-index: 400;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30%;
+    width: 202px;
+    position: relative;
+  }
+  .home .appimageBox .appimage{
+    height: 430px;
+  }
+  .home .appimageBox button{
+    background-color: goldenrod;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 470px;
+    width: 80%;
+  }
+  .bar .line{
+  width: 20px;
+  height: 0px;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  }
+  .about{
+    background-color: white;
+    padding-top: 140px;
+    height: 550px;
+    overflow-y: visible;
+  }
+  .about .aboutleft{
+    flex: 0%;
+    display: none;
+  }
+  .about .aboutright{
+    flex: 0%;
+    display: none;
+  }
+  .about .aboutcenter{
+    flex: 100%;
+    display: block;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .about .aboutcenter .item{
+    width: 100%;
+    position: relative;
+    height: 200px;
+  }
+  .aboutcenter .item img{
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+    border: 6px var(--the-color) solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  }
+  .aboutcenter .item .p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    padding-top: 100px;
+  }
+  .aboutcenter .item .words{
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .aboutpadding{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    margin-top: 60px;
+  }
+  .partner{
+    background-color: black;
+    padding: 20px 0px;
+  }
+  .partner h1{
+    text-align: center;
+    color: var(--the-color);
+  }
+  .partner p{
+    text-align: center;
+    margin-top: 18px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .partner .line1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 0px;
+  }
+  .partner .line1 .gridbox{
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+  }
+  .partner .line1 .gridbox img{
+    width: 110px;
+    height: 110px;
+  }
+  .partner .line2{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 0px;
+  }
+  .partner .line2 .gridbox{
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+  }
+  .partner .line2 .gridbox img{
+    width: 110px;
+    height: 110px;
+  }
+  .footer{
+    padding: 40px 0px 0px 0px;
+  }
+  .footer .section1{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 470px;
+    position: relative;
+  }
+  .footer .section1 h1{
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  .footer .section1 p{
+    font-size: 1.3rem;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+  .footer .section1 button{
+    background-color: var(--the-color);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+  }
+  .footer .section1 img{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    height: 450px;
+    z-index: 1;
+    margin-right: 100px;
+  }
+  .footer .section1 .circle{
+    display: none;
+    position: absolute;
+    border: 7px var(--the-color) solid;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    right: -2px;
+    top: 44%;
+  }
+  .footer .section2{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+  }
+  .footer .section2 .images{
+    width: 100%;
+  }
+  .footer .section2 .images .lamp{
+   width: 200px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+  }
+  .footer .section2 .images button{
+    background-color: var(--the-color);
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    margin-top: 330px;
+    margin-bottom: 30px;
+    box-shadow: 0px 15px 15px rgb(228, 223, 223);
+    margin-left: 20%;
+  }
+  .footer .section2 .images .appBox{
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    display: none;
+  }
+  .footer .section2 .images .appimg{
+    width: 200px;
+  }
+  .footer .section2 form{
+    border: 4px black solid;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .footer .section2 form h2{
+    font-weight: bolder;
+    margin-bottom: 4px;
+  }
+  .footer .section2 form label{
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  .footer .section2 form input{
+    border-radius: 3px;
+    border: 2px rgb(196, 170, 23) solid;
+    outline: none;
+    padding: 3px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .footer .section2 form textarea{
+    border: 2px rgb(196, 170, 23) solid;
+    outline: none;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 28px;
+    display: block;
+    height: 150px;
+    padding: 4px;
+  }
+  .footer .section2 form textarea::placeholder{
+    font-weight: bolder;
+  }
+  .footer .section2 form button{
+    background-color: var(--the-color);
+    padding: 5px 10px;
+    border-radius: 7px;
+    display: block;
+    border: none;
+    font-size: 1.2rem;
+  }
+  .menu{
+    transform: translateY(-100%);
+    height: 100vh;
+    background-color: goldenrod;
+    color: black;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 499;
+    transition: transform 2s;
+  }
+  .canceled{
+    transform: translateY(0%);
+  }
+  .menu li{
+    list-style: none;
+    text-align: center;
+    padding: 5px 12px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .menu .li3{
+    background-color: rgb(231, 34, 66);
+    color: white;
+  }
+  .menu .li4{
+    background-color: black;
+    color: white;
+  }
+  .cancelBtn{
+    font-size: 2rem;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+}
